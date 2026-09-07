@@ -1,9 +1,0 @@
-{
-  "id": "voxel-frontier-alpha-desktop",
-  "name": "Voxel Frontier Alpha",
-  "version": "0.2.0-godot",
-  "engine": "Godot 4.7.2",
-  "codeLicense": "MIT",
-  "assetLicense": "CC0-1.0",
-  "description": "Pré-alpha desktop Godot, open source, locale et moddable."
-}
