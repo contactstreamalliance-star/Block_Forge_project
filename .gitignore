@@ -1,0 +1,31 @@
+# Godot local/editor data
+.godot/
+*.tmp
+*.translation
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local exports/builds
+builds/
+exports/
+*.exe
+*.pck
+*.zip
+
+# Old browser prototype leftovers
+/index.html
+/server.cjs
+/package.json
+/styles.css
+/src/*.js
+
+# Accidental duplicate documents
+* (2).md
+* (2).yml
+* (2).yaml
+
+# Local archives
+/_legacy_browser_prototype_unused/
