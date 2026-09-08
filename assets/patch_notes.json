@@ -1,44 +1,82 @@
 {
   "updates": [
     {
-      "version": "0.2.4-godot",
-      "title": "Code séparé pour contributions",
-      "date": "2026-09-07",
-      "description": "Refactor du projet pour faciliter la lecture, les modifications et les futures mises à jour open source.",
+      "version": "0.2.6-godot",
+      "title": "Retour au bac a sable local",
+      "date": "2026-09-08",
+      "description": "Correction de direction pour garder BlockForge Alpha centre sur un Minecraft-like open source local.",
       "added": [
-        "Dossier src/ui pour les interfaces séparées.",
-        "Dossier src/systems pour les systèmes transversaux comme l'audio.",
-        "Dossier src/utils pour les petits outils réutilisables.",
+        "Regle de projet indiquant que le jeu doit rester local-first.",
+        "Priorites plus claires pour l'inventaire, le crafting, les blocs, les creatures simples et les outils de modding.",
+        "Ajout du script Godot principal manquant sur GitHub."
+      ],
+      "changed": [
+        "Roadmap recentree sur le bac a sable voxel open source.",
+        "Documentation clarifiee pour empecher les ajouts de serveur obligatoire, compte en ligne ou connexion cachee.",
+        "Metadonnees du projet mises a jour vers BlockForge Alpha.",
+        "Version affichee en jeu passee en 0.2.6."
+      ],
+      "removed": [
+        "Anciens fichiers navigateur sortis de la structure active du projet Godot.",
+        "Doublons accidentels de documents.",
+        "References pouvant faire partir le projet vers une logique de jeu en ligne obligatoire."
+      ]
+    },
+    {
+      "version": "0.2.5-godot",
+      "title": "Verification et nettoyage GitHub",
+      "date": "2026-09-08",
+      "description": "Controle des fichiers apres le refactor et correction des metadonnees du projet.",
+      "added": [
+        "Fichier .gitignore adapte au projet Godot.",
+        "Regles pour ignorer les anciens restes du prototype navigateur."
+      ],
+      "changed": [
+        "Nom principal mis a jour vers BlockForge Alpha dans les fichiers importants.",
+        "Chemins du README corriges vers la structure Godot.",
+        "Nom de la scene principale renomme en BlockForgeAlpha.",
+        "Nom du fichier de sauvegarde local change vers blockforge_alpha_world.json."
+      ],
+      "removed": []
+    },
+    {
+      "version": "0.2.4-godot",
+      "title": "Code separe pour contributions",
+      "date": "2026-09-07",
+      "description": "Refactor du projet pour faciliter la lecture, les modifications et les futures mises a jour open source.",
+      "added": [
+        "Dossier src/ui pour les interfaces separees.",
+        "Dossier src/systems pour les systemes transversaux comme l'audio.",
+        "Dossier src/utils pour les petits outils reutilisables.",
         "Dossier src/world pour le rendu et les helpers du monde voxel.",
-        "Module PatchNotesPanel dédié à l'écran des mises à jour.",
-        "Module AudioLibrary dédié aux sons et à la musique.",
-        "Module TextureCache dédié au chargement des PNG.",
-        "Module BlockMaterialFactory dédié aux matériaux des blocs.",
-        "Module SelectionOutline dédié au contour de bloc ciblé.",
-        "Documentation docs/ARCHITECTURE.md pour expliquer où modifier quoi."
+        "Module PatchNotesPanel dedie a l'ecran des mises a jour.",
+        "Module AudioLibrary dedie aux sons et a la musique.",
+        "Module TextureCache dedie au chargement des PNG.",
+        "Module BlockMaterialFactory dedie aux materiaux des blocs.",
+        "Module SelectionOutline dedie au contour de bloc cible."
       ],
       "changed": [
         "main.gd devient davantage un fichier d'orchestration au lieu de contenir toute la logique.",
-        "La création des matériaux de blocs est sortie du fichier principal.",
-        "L'écran Patch Notes est sorti du fichier principal."
+        "La creation des materiaux de blocs est sortie du fichier principal.",
+        "L'ecran Patch Notes est sorti du fichier principal."
       ],
       "removed": [
-        "Anciennes fonctions internes inutilisées de création de nuages et de contour de sélection."
+        "Anciennes fonctions internes inutilisees de creation de nuages et de contour de selection."
       ]
     },
     {
       "version": "0.2.3-godot",
       "title": "Patch Notes en jeu",
       "date": "2026-09-07",
-      "description": "Ajout d'un écran de mises à jour lisible depuis le menu principal et depuis le menu pause.",
+      "description": "Ajout d'un ecran de mises a jour lisible depuis le menu principal et depuis le menu pause.",
       "added": [
         "Bouton Patch Notes dans le menu principal.",
-        "Bouton Patch Notes accessible après avoir appuyé sur Échap.",
+        "Bouton Patch Notes accessible apres avoir appuye sur Echap.",
         "Fichier assets/patch_notes.json modifiable sans recompresser le jeu.",
-        "Affichage des versions de la plus récente en haut à la plus ancienne en bas."
+        "Affichage des versions de la plus recente en haut a la plus ancienne en bas."
       ],
       "changed": [
-        "Le menu principal accueille maintenant plus d'actions sans déborder."
+        "Le menu principal accueille maintenant plus d'actions sans deborder."
       ],
       "removed": []
     },
@@ -46,15 +84,15 @@
       "version": "0.2.2-godot",
       "title": "Optimisation du monde voxel",
       "date": "2026-09-07",
-      "description": "Première passe sérieuse de performance pour rendre le cassage et la pose de blocs plus fluides.",
+      "description": "Premiere passe serieuse de performance pour rendre le cassage et la pose de blocs plus fluides.",
       "added": [
-        "Découpage du monde en morceaux de 16 x 16 blocs.",
+        "Decoupage du monde en morceaux de 16 x 16 blocs.",
         "Reconstruction locale des morceaux proches quand un bloc change.",
-        "Cache de textures PNG pour éviter de relire les mêmes images plusieurs fois."
+        "Cache de textures PNG pour eviter de relire les memes images plusieurs fois."
       ],
       "changed": [
-        "Le HUD ne se met plus à jour à chaque image physique.",
-        "Les ombres des blocs restent désactivées pour garder une pré-alpha plus fluide."
+        "Le HUD ne se met plus a jour a chaque image physique.",
+        "Les ombres des blocs restent desactivees pour garder une pre-alpha plus fluide."
       ],
       "removed": []
     },
@@ -62,38 +100,38 @@
       "version": "0.2.1-godot",
       "title": "Stabilisation visuelle du spawn",
       "date": "2026-09-07",
-      "description": "Correction du départ de partie pour éviter l'effet de monde coupé ou cassé.",
+      "description": "Correction du depart de partie pour eviter l'effet de monde coupe ou casse.",
       "added": [
-        "Mode de terrain showcase_flat pour obtenir un départ stable et propre.",
+        "Mode de terrain showcase_flat pour obtenir un depart stable et propre.",
         "Lanceur JOUER.bat dans le dossier du projet."
       ],
       "changed": [
-        "Le seed par défaut est fixe pour faciliter les tests.",
-        "Le spawn est une clairière plate et large.",
+        "Le seed par defaut est fixe pour faciliter les tests.",
+        "Le spawn est une clairiere plate et large.",
         "Les faces des blocs ne disparaissent plus selon l'angle de vue.",
-        "Les arbres sont éloignés de la zone de départ."
+        "Les arbres sont eloignes de la zone de depart."
       ],
       "removed": [
-        "Nuages temporaires en bandes, retirés car ils donnaient un rendu cassé."
+        "Nuages temporaires en bandes, retires car ils donnaient un rendu casse."
       ]
     },
     {
       "version": "0.2.0-godot",
-      "title": "Pré-alpha desktop Godot",
+      "title": "Pre-alpha desktop Godot",
       "date": "2026-09-07",
-      "description": "Première version native Godot du projet, pensée pour remplacer le prototype navigateur.",
+      "description": "Premiere version native Godot du projet, pensee pour remplacer le prototype navigateur.",
       "added": [
         "Projet Godot desktop jouable localement.",
-        "Monde voxel procédural.",
+        "Monde voxel procedural.",
         "Cassage et pose de blocs.",
         "Textures PNG et sons WAV modifiables.",
         "Musiques et sons chiptune.",
-        "Fichiers communautaires recommandés pour GitHub."
+        "Fichiers communautaires recommandes pour GitHub."
       ],
       "changed": [
         "Rendu en faces visibles au lieu de cubes complets.",
-        "Textures simplifiées et moins bruitées.",
-        "Brouillard et eau réduits pour limiter les bugs visuels."
+        "Textures simplifiees et moins bruitees.",
+        "Brouillard et eau reduits pour limiter les bugs visuels."
       ],
       "removed": [
         "Prototype navigateur comme version principale."
