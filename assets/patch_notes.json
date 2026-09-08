@@ -8,12 +8,14 @@
       "added": [
         "Regle de projet indiquant que le jeu doit rester local-first.",
         "Priorites plus claires pour l'inventaire, le crafting, les blocs, les creatures simples et les outils de modding.",
-        "Ajout du script Godot principal manquant sur GitHub."
+        "Ajout du script Godot principal manquant sur GitHub.",
+        "Dossier .github avec modeles de bug, demande d'amelioration et pull request."
       ],
       "changed": [
         "Roadmap recentree sur le bac a sable voxel open source.",
         "Documentation clarifiee pour empecher les ajouts de serveur obligatoire, compte en ligne ou connexion cachee.",
         "Metadonnees du projet mises a jour vers BlockForge Alpha.",
+        "Dernieres references a l'ancien nom corrigees dans les documents GitHub.",
         "Version affichee en jeu passee en 0.2.6."
       ],
       "removed": [
