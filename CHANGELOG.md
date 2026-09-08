@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.2.6-godot - 2026-09-08
+
+- Recentered the project direction on a local open source voxel sandbox.
+- Removed browser prototype files from the active GitHub project structure.
+- Removed duplicate documentation files created with `(2)` suffixes.
+- Clarified that the base game must not require a server, account, hidden connection target or official online service.
+- Updated project metadata to BlockForge Alpha.
+- Added the missing `src/main.gd` Godot script expected by `scenes/main.tscn`.
+
+## 0.2.5-godot - 2026-09-08
+
+- Verified the renamed `BlockForge_prject` Godot folder.
+- Updated main project metadata to BlockForge Alpha.
+- Added a Godot-focused `.gitignore`.
+- Ignored old browser prototype leftovers so they are not accidentally published with the Godot project.
+- Updated the local save path to `blockforge_alpha_world.json`.
+
 ## 0.2.4-godot - 2026-09-07
 
 - Split reusable code out of `src/main.gd` into focused files under `src/ui`, `src/systems`, `src/utils` and `src/world`.
@@ -23,10 +40,10 @@
 ## 0.2.1-godot - 2026-09-07
 
 - Disabled back-face culling on block materials so grass/ground faces no longer disappear from the player view.
-- Disabled the temporary strip clouds because they made the sky look broken.
+- Disabled temporary strip clouds because they made the sky look broken.
 - Made the default seed deterministic for easier debugging and a consistent clean spawn.
 - Flattened the playable start area further and softened terrain changes around it.
-- Added `JOUER.bat` so the corrected desktop build can be launched directly from the project folder.
+- Added `JOUER.bat` so the desktop build can be launched directly from the project folder.
 
 ## 0.2.0-godot - 2026-09-07
 
@@ -36,8 +53,4 @@
 - Added GitHub-ready community files.
 - Replaced full-cube rendering with visible-face voxel meshes for smoother performance.
 - Fixed selection outline rendering as a filled dark cube.
-- Reduced transparent/internal faces and improved spawn placement to avoid starting inside foliage.
-- Simplified noisy textures, reduced water rendering to surface faces and opened a clear spawn area.
-- Added a hard stability patch: water is disabled by default, spawn is flattened, shadows are disabled, fog is lighter, and the HUD now adapts to smaller windows.
-- Reworked the default world again into a clean demo meadow: no fog at launch, no trees at spawn, gentler terrain, and a wider playable start area.
-- Retuned block lighting and regenerated several textures to remove the neon grass and over-dark blue wall effect.
+- Reduced transparent/internal faces and improved spawn placement.
