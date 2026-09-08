@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="BlockForge_prject"
-config/description="Pré-alpha desktop open source d'un bac à sable voxel rétro."
+config/name="BlockForge Alpha"
+config/description="Pre-alpha desktop open source d'un bac a sable voxel retro."
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.7")
 config/icon="res://assets/ui/icon.png"
