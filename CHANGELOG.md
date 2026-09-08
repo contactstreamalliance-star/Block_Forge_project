@@ -8,6 +8,8 @@
 - Clarified that the base game must not require a server, account, hidden connection target or official online service.
 - Updated project metadata to BlockForge Alpha.
 - Added the missing `src/main.gd` Godot script expected by `scenes/main.tscn`.
+- Added GitHub issue templates and a pull request template under `.github/`.
+- Renamed remaining notice/governance text from the old project name to BlockForge Alpha.
 
 ## 0.2.5-godot - 2026-09-08
 
