@@ -1,77 +1,52 @@
 # BlockForge Alpha
 
-BlockForge Alpha est une base Godot pour construire un Minecraft-like open source : exploration locale, blocs, craft, ressources, survie douce et fichiers faciles a modifier.
+BlockForge Alpha est une pre-alpha Godot native d'un bac a sable voxel open source. Elle ne tourne pas dans un navigateur, ne depend pas d'un CDN, et garde ses fichiers en clair pour GitHub.
 
-Ce projet est un jeu local avant tout. Il ne doit pas devenir un jeu avec serveur obligatoire. Le coeur du projet doit rester jouable en local, ouvert aux modifications et simple a publier sur GitHub.
+Ce projet est independant de Minecraft. Il ne reprend aucun fichier, code, texture, son, nom, logo ou asset Minecraft.
 
 ## Direction du projet
 
-- bac a sable voxel local ;
-- monde modifiable par blocs ;
-- fichiers ouverts pour les textures, donnees, recettes et comportements ;
-- modding communautaire sans dependance a des modloaders Minecraft ;
-- multijoueur seulement optionnel plus tard, jamais obligatoire ;
-- aucune IP personnelle, aucun serveur officiel cache, aucun compte en ligne force.
+- Bac a sable voxel local.
+- Monde modifiable par blocs.
+- Textures, sons, recettes et donnees lisibles dans les fichiers du projet.
+- Modding communautaire sans dependance aux modloaders Minecraft.
+- Multijoueur seulement optionnel plus tard, jamais obligatoire.
+- Aucun serveur officiel cache, aucune IP personnelle dans le code, aucun compte en ligne force.
 
-## Controles actuels
+## Lancer avec Godot
 
-- `Z` ou `W` : avancer
-- `Q` ou `A` : gauche
-- `S` : reculer
-- `D` : droite
-- Fleches directionnelles : deplacement alternatif
-- Souris : camera
-- `Shift` : courir
-- `Espace` : sauter
-- Clic gauche : action principale temporaire
-- Clic droit : action secondaire temporaire
-- `F` : action speciale temporaire
-- `TAB` : ciblage temporaire de prototype
-- `E` : interagir avec ressource ou station proche
-- `Echap` : liberer la souris
+1. Installe ou ouvre Godot 4.7.2.
+2. Choisis `Importer`.
+3. Selectionne la racine du depot.
+4. Ouvre `project.godot`.
+5. Lance `scenes/main.tscn`.
 
-## Boucle de jeu visee
+## Controles
 
-1. Apparaitre dans une petite zone voxel locale.
-2. Recolter des ressources.
-3. Casser et poser des blocs.
-4. Fabriquer des objets simples.
-5. Explorer et agrandir son monde.
-6. Modifier les fichiers du jeu pour ajouter blocs, textures, recettes et mods.
+- `Jouer` : lance la partie et capture la souris.
+- `ZQSD` ou `WASD` : marcher.
+- Souris : regarder.
+- Espace : sauter.
+- Clic gauche : casser le bloc vise.
+- Clic droit : poser le bloc selectionne.
+- `1` a `9` : choisir un bloc.
+- `F` : changer le brouillard retro.
+- `R` : generer un nouveau monde.
+- `Echap` : pause.
 
-## Etat actuel
+## Structure
 
-Cette copie contient encore une scene Godot de test avec des assets temporaires. Elle doit maintenant etre recentree vers BlockForge :
+- `project.godot` : configuration Godot.
+- `scenes/` : scenes Godot.
+- `src/` : code Godot separe par role.
+- `assets/` : blocs, textures, sons, langue, recettes et generation.
+- `mods/` : emplacement prevu pour les futurs mods.
+- `tools/` : outils locaux pour generer ou verifier les assets.
+- `docs/` : documentation du projet.
+- `.github/` : fichiers de contribution GitHub.
 
-- remplacer progressivement les anciens systemes RPG en ligne par des systemes de blocs ;
-- ajouter un vrai monde voxel modifiable ;
-- ajouter inventaire, craft, outils et ressources ;
-- garder tous les fichiers modifiables directement ;
-- documenter chaque mise a jour dans les fichiers du projet.
+## Statut
 
-Les assets importes viennent du Godot Asset Store et ont ete choisis pour leur licence claire. Voir `docs/asset_sources.md`.
+Pre-alpha jouable. Le moteur est volontairement simple et doit rester centre sur un bac a sable voxel local, open source et facilement moddable.
 
-## Fichiers importants
-
-- `scenes/main.tscn` : scene principale.
-- `scripts/main.gd` : scene de test actuelle et logique temporaire.
-- `scripts/player_controller.gd` : controle du joueur.
-- `scripts/enemy_basic.gd` : comportements de test a remplacer par des creatures simples.
-- `scripts/resource_node.gd` : ressources recoltables.
-- `scripts/interactable_station.gd` : stations interactives du hub.
-- `data/characters.json` : base des quatre personnages de depart.
-- `docs/roadmap_alpha_0_1.md` : roadmap.
-- `docs/backlog_alpha_0_1.md` : backlog.
-- `docs/godot_architecture.md` : notes techniques.
-- `docs/asset_sources.md` : sources et licences des assets temporaires.
-
-## Prochaine vraie etape
-
-La prochaine etape logique est de remplacer la scene de test par une premiere zone voxel jouable :
-
-- blocs de terre, herbe, pierre, bois et feuilles ;
-- cassage et pose de blocs ;
-- inventaire simple ;
-- textures modifiables ;
-- sauvegarde locale ;
-- documentation claire pour les futurs contributeurs.
+Les prochaines priorites sont l'inventaire, le crafting, les sauvegardes multiples, les blocs, les creatures simples et les outils de modding.
